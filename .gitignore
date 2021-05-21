@@ -1,0 +1,15 @@
+bin/*
+*.class
+test/*.dat
+errores*.txt
+
+.classpath
+.project
+
+org.eclipse.jdt.core.prefs
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+
