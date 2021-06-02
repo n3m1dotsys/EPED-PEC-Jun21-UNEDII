@@ -72,7 +72,7 @@ public class BSTPriorityQueue<E> extends Collection<E> implements PriorityQueueI
 	 * Añade un elemento a la cola de acuerdo a su prioridad y su orden de llegada
 	 */
 	public void enqueue(E elem, int prior) {
-		int pos = 1;
+		// int pos = 1;
 		IteratorIF<SamePriorityQueue<E>> iter = this.tree.iterator(BSTreeIF.IteratorModes.DIRECTORDER);
 		if (iter.hasNext()){
 			// La cola puede tener una SamePriorityQueue en la que insertar elem
@@ -94,7 +94,7 @@ public class BSTPriorityQueue<E> extends Collection<E> implements PriorityQueueI
 					done = true;
 					break;
 				}
-				pos++;
+				// pos++;
 			}
 			if (!done) {
 				q = new SamePriorityQueue<E>(prior);
@@ -120,7 +120,6 @@ public class BSTPriorityQueue<E> extends Collection<E> implements PriorityQueueI
 		IteratorIF<SamePriorityQueue<E>> iterator = this.tree.iterator(BSTreeIF.IteratorModes.DIRECTORDER);
 		if (iterator.hasNext()) {
 			SamePriorityQueue<E> q = iterator.getNext();
-			System.out.println("prior: " + q.getPriority() + " " + this.size + " " + q.size());
 			q.dequeue();
 			if (q.isEmpty()) {
 				this.tree.remove(q);

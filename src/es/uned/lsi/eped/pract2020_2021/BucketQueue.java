@@ -85,7 +85,6 @@ public class BucketQueue<E> extends Collection<E> implements PriorityQueueIF<E> 
 				if (q.getPriority() == prior) {
 					q.enqueue(elem);
 					this.size++;
-					// System.out.println("Encolando elemento con prioridad " + prior + " en posición " + pos + " " + this.size); // TODO DEBUG
 					done = true;
 					break;
 				}
@@ -94,7 +93,6 @@ public class BucketQueue<E> extends Collection<E> implements PriorityQueueIF<E> 
 					q.enqueue(elem);
 					this.list.insert(pos, q);
 					this.size++;
-					// System.out.println("Encolando elemento con prioridad " + prior + " en posición " + pos + " con una nueva cola " + this.size); // TODO DEBUG
 					done = true;
 					break;
 				}
@@ -105,7 +103,6 @@ public class BucketQueue<E> extends Collection<E> implements PriorityQueueIF<E> 
 				q.enqueue(elem);
 				this.list.insert(pos, q);
 				this.size++;
-				// System.out.println("Encolando elemento con prioridad " + prior + " en posición " + this.list.size() + " con una nueva cola al final " + this.size); // TODO DEBUG
 			}
 		} else {
 			// La cola está vacía
