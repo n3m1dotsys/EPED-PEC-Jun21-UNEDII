@@ -7,7 +7,7 @@ BIN_DIR=/bin
 MAIN=es/uned/lsi/eped/pract2020_2021/Main
 JAVA_HOME_JDK=/usr/lib/jvm/default
 TMP_FOLDER=$PWD/juego_de_pruebas_2021/tmp
-NUMBER_TESTS=5000
+NUMBER_TESTS=100
 
 echo "BQ_ENQ"
 
