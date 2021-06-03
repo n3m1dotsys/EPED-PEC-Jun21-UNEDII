@@ -11,7 +11,7 @@ Práctica para la asignatura Estrategias de Prgramación y Estructuras de Datos 
 |```juegos_de_pruebas_2021```                 | Módulo para la ejecución del juego de pruebas, y juego de pruebas ofrecido por el ED.|
 |```src/```                                   | Código fuente de la práctica (es.uned.lsi.eped.pract2020_2021) + estructuras de dactos del ED (es.uned.lsi.eped.DataStructures).|
 |```test/```                                  | Juegos de pruebas para el estudio del coste empírico + script en python para generarlos.|
-|```Compile_Run_Test_2021_EST_V.00.[bat|sh]```| Script para compilar y ejecutar juego de pruebas |
+|```Compile_Run_Test_2021_EST_V.00.[bat\|sh]```| Script para compilar y ejecutar juego de pruebas |
 |```errores*.txt```                           | Salidas de errores encontrados al ejecutar el juego de pruebas |
 |```EstudioCosteEmpirico.sh```                | Script para ejecutar las pruebas para el estudio del coste empírico (solo en Linux y no se si Mac) |
 |```costeEmpirico.py```                       | Script para el analisis de los resultados de la pureba de tiempo |
